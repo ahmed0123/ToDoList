@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 		listItems.setLayoutManager(layoutManager);
 		
 		loadData();
+
 	}
 	
 	@Override
@@ -103,9 +104,9 @@ public class MainActivity extends AppCompatActivity {
 		
 	}
 	
-	private void updateData(String title, String sdescription) {
+	private void updateData(String title, String description) {
 		database.collection("ToDoList").document(idUpadte)
-				.update("title", title, "description", descriptionText)
+				.update("title", title, "description", description)
 				.addOnSuccessListener(new OnSuccessListener<Void>() {
 					@Override
 					public void onSuccess(Void aVoid) {
