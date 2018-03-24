@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 	public MaterialEditText titleText, descriptionText;
 	public boolean isUpdate = false;
 	public String idUpadte = "";
-	List<ToDo> toDoList = new ArrayList<ToDo>();
+	List<ToDo> toDoList = new ArrayList<>();
 	FirebaseFirestore database;
 	RecyclerView listItems;
 	RecyclerView.LayoutManager layoutManager;
