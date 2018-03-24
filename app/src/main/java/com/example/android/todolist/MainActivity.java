@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
 					updateData(titleText.getText().toString(), descriptionText.getText().toString());
 					isUpdate = !isUpdate;
 				}
+				titleText.setText("");
+				descriptionText.setText("");
 				
 			}
 		});
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 		listItems.setLayoutManager(layoutManager);
 		
 		loadData();
-
+		
 	}
 	
 	@Override
