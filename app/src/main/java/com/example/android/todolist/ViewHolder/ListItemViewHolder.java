@@ -20,11 +20,13 @@ public class ListItemViewHolder extends RecyclerView.ViewHolder implements View.
 	public ListItemViewHolder(View itemView) {
 		super(itemView);
 		
+		itemView.setOnClickListener(this);
+		itemView.setOnCreateContextMenuListener(this);
+		
 		txtTitle = itemView.findViewById(R.id.list_title);
 		txtDescription = itemView.findViewById(R.id.list_description);
 		
-		itemView.setOnClickListener(this);
-		itemView.setOnCreateContextMenuListener(this);
+		
 	}
 	
 	public void setItemClickListiner(ItemClickListiner itemClickListiner) {
